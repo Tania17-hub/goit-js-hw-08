@@ -84,8 +84,6 @@ const galleryMarkup = images
   .join("");
 
 gallery.innerHTML = galleryMarkup;
-
-// Делегування кліку
 gallery.addEventListener("click", onGalleryClick);
 
 function onGalleryClick(event) {
@@ -99,6 +97,5 @@ function onGalleryClick(event) {
   const instance = basicLightbox.create(`
     <img src="${largeImageUrl}" alt="${clickedImage.alt}" />
   `);
-
   instance.show();
 }
