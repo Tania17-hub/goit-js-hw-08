@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
